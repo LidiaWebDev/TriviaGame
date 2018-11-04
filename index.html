@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TriviaGame</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+
+<body>
+    <div id="intro">
+        <h1>How well do you know the US history? </h1>
+        <div id="quiz">
+            <strong>You have 30 seconds to guess 10 questions</strong></div>
+        <button id="start">
+            Start the quiz</button>
+
+    </div>
+
+    <div class="maincontainer" id="triviaGame">
+
+        <div id="timer">
+            <h3><strong>30</strong></h3>
+        </div>
+
+
+        <h3>1. Who is the first president of the United States?</h3>
+        <!-- George Washington-->
+        <input type="radio" name="q1" value="Franklin D. Roosevelt">Franklin D. Roosevelt
+        <input type="radio" name="q1" value="John Hanson">John Hanson
+        <input type="radio" name="q1" value="Barack Obama">Barack Obama
+        <input type="radio" name="q1" value="George Washington">George Washington
+
+
+        <h3>2. When the constitution was declared?</h3>
+        <!-- 1789 -->
+        <input type="radio" name="q2" value="1864">1864
+        <input type="radio" name="q2" value="1789">1789
+        <input type="radio" name="q2" value="1789">1789
+        <input type="radio" name="q2" value="1982">1982
+
+
+
+        <h3>3. What fifty stars represent on the US flag?</h3>
+        <!-- Fifty states of the United States -->
+        <input type="radio" name="q3" value="Fifty colonies of the US in 1777">Fifty colonies of the US in 1777
+        <input type="radio" name="q3" value="Fifty stripes of freedom">Fifty stripes of freedom
+        <input type="radio" name="q3" value="Fifty states of the United States">Fifty states of the United States
+        <input type="radio" name="q3" value="Fifty first people coming to the States">Fifty first people coming to the
+        States
+
+
+        <h3>4. What automobile was named after Henry Ford’s only son?</h3>
+        <!-- Edsel -->
+        <input type="radio" name="q4" value="Edsel">Edsel
+        <input type="radio" name="q4" value="Buick">Buick
+        <input type="radio" name="q4" value="Nissan">Nissan
+        <input type="radio" name="q4" value="Ford Fiesta">Ford Fiesta
+
+
+        <h3>5. Which American inventor is credited by inventing a light bulb?</h3>
+        <!-- Thomas Edison  -->
+        <input type="radio" name="q5" value="Alexander Graham Bell">Alexander Graham Bell
+        <input type="radio" name="q5" value="Henry Ford">Henry Ford
+        <input type="radio" name="q5" value="Thomas Edison">Thomas Edison
+        <input type="radio" name="q5" value="Albert Einstein">Albert Einstein
+
+        <h3>6. Who discovered America?</h3>
+        <!-- Christopher Columbus-->
+        <input type="radio" name="q6" value="Christopher Walken">Christopher Walken
+        <input type="radio" name="q6" value="Christopher Columbus">Christopher Columbus
+        <input type="radio" name="q6" value="Christopher Meloni">Christopher Meloni
+        <input type="radio" name="q6" value="Christopher I of Denmark">Christopher I of Denmark
+
+
+        <h3>7. Which year did California became a state?</h3>
+        <!-- 1850-->
+        <input type="radio" name="q7" value="1850">1850
+        <input type="radio" name="q7" value="1990">1990
+        <input type="radio" name="q7" value="1877">1877
+        <input type="radio" name="q7" value="1765">1765
+
+        <h3>8. Who is the best US best-selling music artist of all time?</h3>
+        <!-- Michael Jackson -->
+        <input type="radio" name="q8" value="Elvis Presley">Elvis Presley
+        <input type="radio" name="q8" value="Britney Spears">Britney Spears
+        <input type="radio" name="q8" value="Michael Jackson">Michael Jackson
+        <input type="radio" name="q8" value="Beyonce">Beyonce
+
+        <h3>9. What state Niagara Falls is located?</h3>
+        <!-- New York -->
+        <input type="radio" name="q9" value="New York">New York
+        <input type="radio" name="q9" value="Michigan">Michigan
+        <input type="radio" name="q9" value="Minnesota">Minnesota
+        <input type="radio" name="q9" value="Pennsylvania">Pennsylvania
+
+        <h3>10. Where did the statue of Liberty come from?</h3>
+        <!-- France -->
+        <input type="radio" name="q10" value="Russia">Russia
+        <input type="radio" name="q10" value="Germany">Germany
+        <input type="radio" name="q10" value="France">France
+        <input type="radio" name="q10" value="Mexico">Mexico
+
+
+        <br>
+
+        <button id="complete">Submit!</button>
+    </div>
+
+    <div class="results">
+        <h2>Your results</h2>
+        <p>Right Answers: <span id="right">0</span></p>
+        <p>Wrong Answers: <span id="wrong">0</span></p>
+        <p>Unanswered: <span id="unanswered">0</span></p>
+        <button id="restart">Should we try again?</button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
