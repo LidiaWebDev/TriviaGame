@@ -2,11 +2,10 @@ body,
 html {
   height: 100%;
   background-image: url("../images/flag.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  min-width: 100%;
-  text-align: center;
 }
 
 .container {
