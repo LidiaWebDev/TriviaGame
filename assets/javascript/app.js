@@ -12,40 +12,45 @@
     "1850",
     "Michael Jackson",
     "New York",
-    "France"
+    "France",
   ]);
-$(".maincontainer").hide();
+$(".mainContainer").hide();
 $(".results").hide();
 
-$("#start").on("click", function(event) {
+$("#start").on("click", function (event) {
   event.preventDefault();
   $("#intro").hide();
-  $(".maincontainer").show();
+  $(".mainContainer").show();
   startCounting();
 });
 var interv;
-startCounting = function(sec) {
+startCounting = function (sec) {
   var sec = timer;
-  interv = setInterval(function(timer) {
+  interv = setInterval(function (timer) {
     sec--;
     document.getElementById("timer").innerHTML = sec;
     if (sec === 0) {
       console.log("The time is up! let's see the results!");
-      $(".maincontainer").hide();
+      $(".mainContainer").hide();
       $(".results").show();
       collectResults();
     }
   }, 1000);
 };
 
-$("#complete").on("click", function(event) {
+$("#complete").on("click", function (event) {
   event.preventDefault();
   $("#intro").hide();
-  $(".maincontainer").hide();
+  $(".mainContainer").hide();
   $(".results").show();
   console.log("The time is up! let's see the results!");
   collectResults();
   return;
+});
+
+$(".playAgain").on("click", function (event) {
+  event.preventDefault();
+  location.reload();
 });
 
 function collectResults() {
